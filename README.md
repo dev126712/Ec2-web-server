@@ -1,8 +1,8 @@
 # EC2 Web Server with Nginx
 ## In this project, I will deploy a web server using Amazon EC2 instance. I will launch an EC2 instance, install Nginx, and configure it to serve a basic website.
 
-## Launch an EC2 Instance
-# I first launch an ec2 instance with the AMI Amazon Linux 2 and choose the t2.micro free tier instance type. I created a new ssh key pair to connect to my instance.
+# Launch an EC2 Instance
+#### I first launch an ec2 instance with the AMI Amazon Linux 2 and choose the t2.micro free tier instance type. I created a new ssh key pair to connect to my instance.
 
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2.png)
