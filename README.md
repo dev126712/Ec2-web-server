@@ -1,4 +1,4 @@
-#### EC2 Web Server with Nginx
+## EC2 Web Server with Nginx
 ## In this project, I will deploy a web server using Amazon EC2 instance. I will launch an EC2 instance, install Nginx, and configure it to serve a basic website.
 
 ### Launch an EC2 Instance
@@ -22,6 +22,8 @@ I then install Nginx
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2Config.png)
 
 ### Start and enable Nginx
+I did "sudo systemctl start nginx" to immediately start the Nginx service. It's necessary to get the server up and running right after installation.
+Also "sudo systemctl enable nginx" to configures Nginx to launch automatically every time the system boots. This is crucial for maintaining server uptime without manual intervention after a reboot.
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/nginx.png)
 ![Image]()
 
@@ -31,7 +33,7 @@ I created an index.html file in the /usr/share/nginx/html/index.html file path u
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage.png)
 
 ### Access the Web Server
-After saving my index.html file, I access it by entering my ec2 instance public address on port 80.
+After saving my index.html file, I access it by entering my ec2 instance public address on port 80(http).
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage1.png)
 
