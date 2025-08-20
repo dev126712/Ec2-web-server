@@ -12,16 +12,18 @@
 
 ## Security Group
 
-#### The security groupe allows ssh on port 22 to connect to it.
-#### The security group also allows traffic on port 80 to access the Web Server on my browser.
+### The security group acts as a virtual firewall for the EC2 instance, controlling both inbound and outbound traffic.
+
+#### The security groupe allows inbound and outbound traffic on port 22 (SSH) it's crucial for remote access.
+#### The security group also allows traffic on port. This rule is crucial for making the web server accessible to the public, allowing users to view the hosted website by entering the instance's public IP address into a web browser.
 
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/securityGroup.png)
 
 ## Connect to the EC2 Instance, Update the package repo, Install Nginx
 
-#### I then connect to my ec2 instance but firt i had to change the permission of the .pem file(ssh key).
-#### I updated the repo package of my instance.
+#### I then connect to my ec2 instance but firt i had to set the correct the permission of my .pem file(ssh key file) by running chmod 400 keypair.pem.
+#### I then updated the package repository of my instance to ensure the latest version of software is installed.
 #### I then install Nginx
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2Config.png)
@@ -31,7 +33,7 @@
 #### I did "sudo systemctl start nginx" to immediately start the Nginx service. It's necessary to get the server up and running right after installation.
 #### Also "sudo systemctl enable nginx" to configures Nginx to launch automatically every time the system boots. This is crucial for maintaining server uptime without manual intervention after a reboot.
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/nginx.png)
-![Image]()
+
 
 ## Deploy the simple Web Page
 
@@ -41,7 +43,7 @@
 
 ## Access the Web Server
 
-#### After saving my index.html file, I access it by entering my ec2 instance public address on port 80(http).
+#### After saving my index.html file, I access it by navigating with my ec2 instance public address on port 80(http).
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage1.png)
 
