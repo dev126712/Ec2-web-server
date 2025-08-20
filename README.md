@@ -37,15 +37,13 @@
 
 ## Deploy the simple Web Page
 
-#### I created an index.html file in the /usr/share/nginx/html/index.html file path uses for nginx web file and paste my simple html file.
+#### Nginx serves web content from a default directory, which on Amazon Linux 2 is /usr/share/nginx/html/. To deploy the website, I created a index.html file in this path.
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage.png)
 
 ## Access the Web Server
 
-#### After saving my index.html file, I access it by navigating with my ec2 instance public address on port 80(http).
+#### After successfully deploying the index.html file, I access the web server by navigating to the ec2 instance's public IP address in my web browser. The security group rule allowing inbound traffic on port 80 makes this connection possible.
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage1.png)
-
-### Configure Auto Start to Ensure the web server starts on reboot
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/nginx2.png)
