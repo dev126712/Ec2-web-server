@@ -10,14 +10,14 @@
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2.png)
 
-## Security Group & SSH Key
+## Configuring the Security Group & create the SSH Key
 
 ### I created a new ssh key pair to connect to my instance.
 
 ### The security group acts as a virtual firewall for the EC2 instance, controlling both inbound and outbound traffic.
 
-#### The security groupe allows inbound and outbound traffic on port 22 (SSH) it's crucial for remote access.
-#### The security group also allows traffic on port. This rule is crucial for making the web server accessible to the public, allowing users to view the hosted website by entering the instance's public IP address into a web browser.
+#### SSH (Port 22) The security groupe allows inbound and outbound traffic on port 22 (SSH) it's crucial for remote access.
+#### HTTP (Port 80) The security group also allows traffic on port 80. This rule is crucial for making the web server accessible to the public, allowing users to view the hosted website by entering the instance's public IP address into a web browser.
 
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/securityGroup.png)
@@ -39,7 +39,7 @@
 
 ## Deploy the simple Web Page
 
-#### Nginx serves web content from a default directory, which on Amazon Linux 2 is /usr/share/nginx/html/. To deploy the website, I created a index.html file in this path.
+#### Nginx serves web content from a default directory, which on Amazon Linux 2 is /usr/share/nginx/html/. To deploy the website, I created a index.html file in this path and paste my html code in it. This file serves as the main entry point for the website.
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage.png)
 
