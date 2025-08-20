@@ -48,4 +48,3 @@
 ### After successfully deploying the index.html file, I access the web server by navigating to the ec2 instance's public IP address in my web browser. The security group rule allowing inbound traffic on port 80 makes this connection possible.
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/webpage1.png)
-![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/nginx2.png)
