@@ -10,7 +10,7 @@
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2.png)
 
-## Security Group
+## Security Group & SSH Key
 
 ### I created a new ssh key pair to connect to my instance.
 
