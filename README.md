@@ -5,12 +5,14 @@
 
 # Launch an EC2 Instance
 
-#### I first launch an ec2 instance with the AMI Amazon Linux 2 and choose the t2.micro free tier instance type. I created a new ssh key pair to connect to my instance.
+#### I first launch an ec2 instance with the AMI Amazon Linux 2 and choose the t2.micro free tier instance type.
 
 
 ![Image](https://github.com/dev126712/Ec2-web-server/blob/639c60921edb196a8867d34e516df3bd8a81046b/ec2.png)
 
 ## Security Group
+
+### I created a new ssh key pair to connect to my instance.
 
 ### The security group acts as a virtual firewall for the EC2 instance, controlling both inbound and outbound traffic.
 
